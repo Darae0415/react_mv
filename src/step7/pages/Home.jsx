@@ -54,14 +54,6 @@ export function Home() {
                 />
               );
               // map : 어떤 작업을 수행하고 새로운 배열로 나열해 화면에 표현
-              // return <li key={item.id}>
-              //   {item.id}<br/>
-              //   {item.year}<br/>
-              //   {item.title}<br/>
-              //   {item.summary}<br/>
-              //   {item.medium_cover_image}<br/>
-              //   {item.genres}<br/>
-              //   </li>
             })
           }
       </ul></div>

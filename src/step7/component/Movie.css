@@ -33,4 +33,5 @@
 }
 .movie_genres li, .movie .movie_year{
   margin-right: 10px;
+  font-size: 14px;
 }

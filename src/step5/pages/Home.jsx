@@ -1,4 +1,4 @@
-// 2. JSON파일 읽어오기
+// Home 목록페이지
 //npm install axios
 // 목록주소
 // https://yts.mx/api/v2/list_movies.json
@@ -7,10 +7,10 @@
 // https://yts.mx/api/v2/movie_details.json?movie_id=11
 // https://yts-proxy.now.sh/movie_detail.json?movie_id=11
 import axios from 'axios';
-import './App.css';
+import './Home.css';
 import { useState, useEffect } from 'react';
 
-function App() {
+export function Home() {
   // 상태변수를 설정
   const [isLoading, setIsLoading] = useState(true);
   const [loadCounter,setLoadCounter] = useState(0);
@@ -37,7 +37,7 @@ function App() {
   function displayMovies(){
     return(
       <div>
-        <h1>movie List2</h1>
+        <h1>movie List(Home)</h1>
         <ul>
           {
             movies.map(item =>{
@@ -54,5 +54,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
